@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0f172a;
+  color: #e2e8f0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6366f1;
+}
+
+/* Markdown styles inside RCA report */
+.rca-markdown h2 {
+  color: #818cf8;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #334155;
+}
+.rca-markdown h3 {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+.rca-markdown ul, .rca-markdown ol {
+  padding-left: 1.25rem;
+  margin: 0.4rem 0;
+}
+.rca-markdown li {
+  margin: 0.2rem 0;
+  color: #cbd5e1;
+  font-size: 0.85rem;
+}
+.rca-markdown p {
+  color: #cbd5e1;
+  font-size: 0.85rem;
+  margin: 0.4rem 0;
+}
+.rca-markdown strong {
+  color: #e2e8f0;
+}
+.rca-markdown code {
+  background: #1e293b;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  color: #67e8f9;
+}
